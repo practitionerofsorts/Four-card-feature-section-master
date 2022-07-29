@@ -48,6 +48,9 @@ body{
 .title-bold{
     margin-bottom: .5em;
 }
+.subtitle{
+    font-weight:200;
+}
 .grid-container{
     display: grid;
     grid-gap: 1.5em;
@@ -72,6 +75,7 @@ body{
 }
 .card p{
     margin-bottom: 2.5em;
+    font-weight: 200;
 }
 .card img{
     width: 64px;
