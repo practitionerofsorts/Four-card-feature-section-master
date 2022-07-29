@@ -19,6 +19,9 @@
 --Very-Dark-Blue: hsl(234, 12%, 34%);
 --Grayish-Blue: hsl(229, 6%, 66%);
 --Very-Light-Gray: hsl(0, 0%, 98%);
+
+--margin: 35%;
+--marginMinus: -35%;
 }
 body{
     min-height: 100vh;
@@ -35,7 +38,7 @@ body{
 }
 .title{
     color: var(--Very-Dark-Blue);
-    margin-bottom: 5em;
+    margin-bottom: 4em;
     text-align: center;
 }
 .title .title-slim{
@@ -43,7 +46,7 @@ body{
     margin-bottom: .3em;
 }
 .title-bold{
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 .grid-container{
     display: grid;
@@ -58,11 +61,17 @@ body{
     color: var(--Very-Dark-Blue);
     box-shadow: 0px 1px 9px 0px var(--Grayish-Blue);
 }
+.card:hover{
+    transform: scale(1.05);
+    transition: .5s ease;
+       animation-name: shake;
+    animation-duration: 2s;
+}
 .card h2{
     margin-bottom: .5em;
 }
 .card p{
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 .card img{
     width: 64px;
@@ -101,6 +110,10 @@ body{
     .whole-container{
         width: 95%;
     }
+    .subtitle{
+        width: 60%;
+        margin: auto;
+    }
     .grid-container{
         grid-auto-columns: minmax(3px, 1fr);
         grid-template-areas: 
@@ -110,6 +123,8 @@ body{
     }
     .card:nth-child(1){
         grid-area: start2 ;
+        margin-top: var(--marginMinus);
+        margin-bottom: var(--margin);
     }
     .card:nth-child(2){
         grid-area: middle1;
@@ -119,6 +134,13 @@ body{
     }
     .card:nth-child(4){
         grid-area: end2;
+        margin-top: var(--marginMinus);
+        margin-bottom: var(--margin);
+    }
+}
+@media (min-width: 1339px){
+    .card{
+        max-width: 350px;
     }
 }
 .attribution{
