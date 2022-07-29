@@ -99,6 +99,7 @@ body{
 }
 @media (min-width:900px){
     .whole-container{
+        width: 95%;
     }
     .grid-container{
         grid-auto-columns: minmax(3px, 1fr);
