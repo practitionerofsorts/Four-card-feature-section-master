@@ -98,6 +98,26 @@ body{
         font-size: 25px;
     }
 }
+@media (min-width:900px){
+    .grid-container{
+        grid-template-areas: 
+        "start1 middle1 end1"
+        "start2 middle2 end2"
+        "start3 middle3 end3";
+    }
+    .card:nth-child(1){
+        grid-area: start2 ;
+    }
+    .card:nth-child(2){
+        grid-area: middle1;
+    }
+    .card:nth-child(3){
+        grid-area: middle2;
+    }
+    .card:nth-child(4){
+        grid-area: end2;
+    }
+}
 .attribution{
     font-size: 10px;
     text-align: center;
