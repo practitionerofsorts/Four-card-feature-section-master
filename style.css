@@ -29,7 +29,7 @@ body{
 }
 .whole-container{
     min-height: 100vh;
-    margin: 5em auto;
+    margin: 3em auto;
     font-size: 15px;
     display: flex;
     flex-direction: column;
@@ -143,6 +143,9 @@ body{
     }
 }
 @media (min-width: 1339px){
+    .whole-container{
+        margin-top: 1em;
+    }
     .card{
         max-width: 350px;
     }
